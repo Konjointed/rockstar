@@ -1,3 +1,68 @@
+@charset "utf-8";
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Layout */
+#page {
+    width: 60%;
+    margin: 2em auto 0;
+ }
+
 main {
-    
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    order: 1;
+    flex: 1; 
+}
+
+#lyrics {
+    line-height: 1.6; 
+    margin-bottom: 1em; 
+    text-align: left; 
+    padding: 1em; 
+    background-color: #333; 
+    border-radius: 1em; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+aside {
+    margin-left: 2em;
+    order: 2;
+    flex-basis: 15em; 
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+body {
+    color: white;
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#lyrics {
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Color */
+body {
+    background-color: #242424;
 }
